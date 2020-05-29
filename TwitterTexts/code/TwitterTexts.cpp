@@ -5,9 +5,9 @@
 #include <stdlib.h>
 
 #define Assert(Expression) if(!Expression){*(int *)0 = 0;}
-#define FROM    "<1s22p63d104f14@gmail.com>"
-#define TO      "<3149414314@vtext.com>"
-#define CC      "<1s22p63d104f14@gmail.com>"
+#define FROM    "<your email address>"
+#define TO      "<user phone number + carrier email address>"
+#define CC      "<>"
 
 struct upload_status {
     int lines_read;
@@ -311,8 +311,8 @@ int main()
 
             curl_easy_reset(EZHandle);
             
-            curl_easy_setopt(EZHandle, CURLOPT_USERNAME, "1s22p63d104f14@gmail.com");
-            curl_easy_setopt(EZHandle, CURLOPT_PASSWORD, "Cna874195?");
+            curl_easy_setopt(EZHandle, CURLOPT_USERNAME, "put your email address here");
+            curl_easy_setopt(EZHandle, CURLOPT_PASSWORD, "put password here");
             curl_easy_setopt(EZHandle, CURLOPT_URL, "smtp://smtp.gmail.com:587");
             curl_easy_setopt(EZHandle, CURLOPT_USE_SSL, (long)CURLUSESSL_ALL);
             curl_easy_setopt(EZHandle, CURLOPT_CAINFO, "mail-google-com-chain.pem");    
@@ -337,7 +337,7 @@ int main()
             Assert(curl_easy_setopt(EZHandle,CURLOPT_URL,URLString) == CURLE_OK);
             Assert(curl_easy_setopt(EZHandle,CURLOPT_HTTPGET)== CURLE_OK);
             Assert(curl_easy_setopt(EZHandle,CURLOPT_HTTPAUTH, CURLAUTH_BEARER) == CURLE_OK);
-            Assert(curl_easy_setopt(EZHandle, CURLOPT_XOAUTH2_BEARER,"AAAAAAAAAAAAAAAAAAAAANIFEgEAAAAAC1%2F4cuMGUpNgGfdcfCteF%2F4JHSA%3DhSNOROobfSNHj3rrVJ3AnTi3i2X8NhZ6m7gBJut2NIK0NgB0XC") == CURLE_OK);
+            Assert(curl_easy_setopt(EZHandle, CURLOPT_XOAUTH2_BEARER,"Put Bearer token string here") == CURLE_OK);
             Assert(curl_easy_setopt(EZHandle,CURLOPT_WRITEDATA,(void *)NewTweet) == CURLE_OK);
 //            curl_easy_setopt(EZHandle, CURLOPT_VERBOSE, 1L);
             
