@@ -1,0 +1,14 @@
+API Key: RrNWAS1IDOHIyj4yZEPrNxOB7
+
+API secret key: 5GTDx0qvHnBt54lp4dSmLly34l9x1FuB4YKXb2b9aPC3DP3sfA
+
+Bearer token: AAAAAAAAAAAAAAAAAAAAANIFEgEAAAAA%2BkB2LX5pwawW81wLmCdruy22XZQ%3DbNrnmwsQy6Q3riiUfTMpW4svj9OeqULhyT2JETjCcU3yGXqrpo
+New:          AAAAAAAAAAAAAAAAAAAAANIFEgEAAAAAC1%2F4cuMGUpNgGfdcfCteF%2F4JHSA%3DhSNOROobfSNHj3rrVJ3AnTi3i2X8NhZ6m7gBJut2NIK0NgB0XC
+
+curl -X GET -H "Authorization: Bearer AAAAAAAAAAAAAAAAAAAAANIFEgEAAAAAC1%2F4cuMGUpNgGfdcfCteF%2F4JHSA%3DhSNOROobfSNHj3rrVJ3AnTi3i2X8NhZ6m7gBJut2NIK0NgB0XC" "https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=kylebosman&count=1&trim_user=1"
+
+curl -X GET -H "Authorization: Bearer AAAAAAAAAAAAAAAAAAAAANIFEgEAAAAAC1%2F4cuMGUpNgGfdcfCteF%2F4JHSA%3DhSNOROobfSNHj3rrVJ3AnTi3i2X8NhZ6m7gBJut2NIK0NgB0XC" "https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=twitterapi&count=2"
+
+
+curl -X GET -H "Authorization: Bearer AAAAAAAAAAAAAAAAAAAAANIFEgEAAAAAC1%2F4cuMGUpNgGfdcfCteF%2F4JHSA%3DhSNOROobfSNHj3rrVJ3AnTi3i2X8NhZ6m7gBJut2NIK0NgB0XC" "https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=twitterapi&count=2"
+
